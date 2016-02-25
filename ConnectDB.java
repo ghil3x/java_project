@@ -1,10 +1,6 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-
-/**
- * Created by slima_000 on 27/08/2015.
- */
 public class ConnectDB {
 
     public static Connection ConnectBase() {
