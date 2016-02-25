@@ -1,8 +1,5 @@
 import java.sql.*;
 
-/**
- * Created by slima_000 on 09/01/2016.
- */
 public class Show {
     static Connection cnx;
     static Statement st;
