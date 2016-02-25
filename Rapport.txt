@@ -1,0 +1,107 @@
+Rapport de Projet 
+
+Thème
+Conception et réalisation d’un logiciel de gestion des emplois du temps en Java.
+
+Réalisé par :  
+SLIMANI Alim	
+RAMDANI Aghiles
+
+Sommaire
+
+I. Introduction
+II. Environnement de développement
+III. Fonctionnalités
+1	Connexion Utilisateur
+2	Choisir une fonctionnalité dans un menu
+3	réserver une salle sur un créneau pour un cours
+4	Ajouter un bâtiment a une université 
+5	Gérer les étudiants, professeurs et les cours 
+6	afficher les salles utilisées par un enseignant
+
+IV. Architecture
+1.	Diagramme de classes UML
+2.	Design Patterns utilisés
+3.   Difficultés rencontrées
+
+V. Conclusion
+
+
+I. Introduction
+
+Ce rapport vous présente le travail que nous avons effectué le premier semestre.
+Le projet Java consistait à développer un logiciel permettant la gestion de l'emploi du temps d'une université. 
+Le projet sera réalisé avec Java tout en s'assurant de l'utilisation des nouvelles fonctionnalités de la version 1.8 de Java, 
+ainsi que des design patterns pour une meilleure optimisation du code. 
+Nous avons utilisé une base de données pour gérer les différents acteurs d'une université ainsi les comptes utilisateurs et administrateurs. 
+Nous détaillons dans ce rapport les fonctionnalités développées, l’architecture du logiciel, ainsi qu’une documentation utilisateur, 
+et nous vous parlerons enfin de nos impressions et des leçons que nous tirons de cette expérience.
+Le code du logiciel est disponible sur le lien GitLab associé :
+https://git-etudiants.lacl.fr/JavaPattern2015/groupe18
+
+II. Environnement de développement
+
+Pour le développement de notre application, nous avons opté pour l'IDE de JetBrains : IntelliJ IDEA. En effet, 
+cet IDE nous apporte toutes les fonctionnalités nécessaires pour un bon environnement de travail, 
+qui inclut la prise en charge de JAVA 8. Et de PostgreSQL comme système de gestion de base de données relationnelle 
+et objet (SGBD) pour crée et utiliser notre base de données.
+
+
+III. Fonctionnalités
+
+Nous verrons dans cette première partie l’ensemble des fonctionnalités de notre application.
+
+1. Connexion utilisateur
+
+    Au lancement, l’utilisateur peut choisir son statut, puis saisir les coordonnées de son compte pour se connecter. 
+Si le compte est correct, il sera connecté et pourra profiter des droits qui lui sont attribué suivant son statut.
+Il pourra a tout instant se déconnecté ou revenir à l'étape précédente.
+
+2. Choisir une option dans un menu
+
+    Un utilisateur avec de s'identifier aura un menu à sa disposition pour choisir son statut.
+Une fois connecté, l'utilisateur se verra attribué une liste de choix et ses choix diffère entre un utilisateur et un autre.
+
+3. Réserver une salle dans un créneau donné
+
+	Un Administrateur ou un professeur a la possibilité d'ajouter un cours en définissant la salle et le créneau choisis, 
+ainsi la salle est réservé pendant le période définie. Et à tout moment, ce créneau peut être modifié ou supprimé. 
+	
+4. Ajouter un bâtiment a une université 
+
+ 	Si un nouveau bâtiment est construit, on a la possibilité de l'ajouter à notre base de données ainsi que les étages 
+ et salles y figurant.
+ 
+5. Gérer les étudiants, professeurs et les cours
+
+	Un administrateur est le seul utilisateur à pouvoir ajouter, modifier ou supprimer des étudiants ou des professeurs 
+ou encore un cours donné.
+
+IV. Architecture
+
+1. Diagramme de classes UML
+Le diagramme fourni est une version simplifiée. Des extraits complets illustrent cependant les patrons de conception employés.
+
+2. Design Patterns utilisés
+
+a. Singleton
+    Nous avons utilisé le patron de conception Singleton pour gérer la connexion à la base de données. 
+Ainsi, une seule instance de connexion peut exister à la fois, puisque nous n’avons pas accès au constructeur en dehors de la classe.
+Nous appelons une méthode qui se charge d’instancier la connexion, ou de retourner la connexion existante.
+
+3. Difficultés rencontrées
+
+    Ce projet fut l’occasion de renforcer nos notions de programmation Java, et d’apprendre l’utilisation avec une base de données Posgresql. 
+Ses principales difficultés furent de se concentrer sur l’objectif principal (minimum fonctionnel) 
+et pas sur toutes les améliorations possibles.
+
+
+V. Conclusion
+
+    Ce projet majeur dans notre année universitaire nous a permis de découvrir de nouvelles technologies 
+et de nouvelles pratiques en matière de programmation Orienté Objet, notre domaine d’études privilégié. 
+Il nous a permis de confirmer notre intérêt pour ce secteur et nous a confortés dans nos choix de poursuite de cursus universi¬taire.
+
+    Pour finir, nous aurions aimé avoir plus de temps pour apporter un maximum de fonctionnalités à cette application 
+qui nous parait utile et nécessaire, mais cela nous empêche pas de la faire cela de notre côté. 
+Nous allons donc continuer à développer notre application de notre côté en lui rajoutant le maximum d'options.
