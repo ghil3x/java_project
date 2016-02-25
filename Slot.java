@@ -4,9 +4,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Date;
 
-/**
- * Created by slima_000 on 28/12/2015.
- */
 public class Slot {
 
     private Date dt_s;
