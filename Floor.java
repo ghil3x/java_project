@@ -1,9 +1,6 @@
 import java.sql.PreparedStatement;
 import java.util.List;
 
-/**
- * Created by slima_000 on 01/12/2015.
- */
 public class Floor extends Building {
 
     private final int num_floor;
