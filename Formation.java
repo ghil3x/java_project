@@ -4,9 +4,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.List;
 
-/**
- * Created by slima_000 on 09/01/2016.
- */
 public class Formation {
     private String nam;
     private int idf;
